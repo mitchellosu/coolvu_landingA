@@ -1,0 +1,146 @@
+/* ===== BRAND COLORS (matched to windowtintmckinney.com) ===== */
+    /* Primary: Deep matte black (#0a0a0a) - mimics tinted glass */
+    /* Accent: Bold red (#e11d2a) - matches smake the colors and the blues and light blues and white on brand and consistent with the main website company brand and website. The thank you page should be blue light blue and white etc. see attached screenshot for the vibe I want. [IMG: IMG 5347]e's CTA red */
+    /* Secondary: Charcoal/graphmake the colors and the blues and light blues and white on brand and consistent with the main website company brand and website. The thank you page should be blue light blue and white etc. see attached screenshot for the vibe I want. [IMG: IMG 5347]e gradient for premium automotive feel */
+    /* Text: Crisp whmake the colors and the blues and light blues and white on brand and consistent with the main website company brand and website. The thank you page should be blue light blue and white etc. see attached screenshot for the vibe I want. [IMG: IMG 5347]es and warm grays */
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0a0a0a;
+      min-height: 100vh;
+      margin: 0;
+      color: #f5f5f5;
+      posmake the colors and the blues and light blues and white on brand and consistent with the main website company brand and website. The thank you page should be blue light blue and white etc. see attached screenshot for the vibe I want. [IMG: IMG 5347]ion: relative;
+      overflow-x: hidden;
+    }
+
+    /* ===== TINTED GLASS BACKGROUND EFFECT ===== */
+    /* Layered radial gradients evoke a dark, tinted automotive window */
+    body::before {
+      content: '';
+      posmake the colors and the blues and light blues and white on brand and consistent with the main website company brand and website. The thank you page should be blue light blue and white etc. see attached screenshot for the vibe I want. [IMG: IMG 5347]ion: fixed;
+      inset: 0;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(225, 29, 42, 0.18) 0%, transparent 45%),
+        radial-gradient(circle at 80% 90%, rgba(225, 29, 42, 0.12) 0%, transparent 45%),
+        linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+      z-index: -1;
+    }
+
+    /* Subtle diagonal "tint film" pattern overlay */
+    body::after {
+      content: '';
+      posmake the colors and the blues and light blues and white on brand and consistent with the main website company brand and website. The thank you page should be blue light blue and white etc. see attached screenshot for the vibe I want. [IMG: IMG 5347]ion: fixed;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.015) 0px,
+        rgba(255, 255, 255, 0.015) 1px,
+        transparent 1px,
+        transparent 12px
+      );
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    /* ===== CARD ===== */
+    .brand-card {
+      background: linear-gradient(180deg, #161616 0%, #0f0f0f 100%);
+      border: 1px solid rgba(225, 29, 42, 0.25);
+      box-shadow:
+        0 25px 80px rgba(0, 0, 0, 0.7),
+        0 0 60px rgba(225, 29, 42, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    }
+
+    /* ===== CHECKMARK - red brand accent ===== */
+    .checkmark {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #e11d2a 0%, #b8141f 100%);
+      box-shadow: 0 10px 30px rgba(225, 29, 42, 0.45), 0 0 0 8px rgba(225, 29, 42, 0.08);
+      animation: scaleIn 0.5s ease-out;
+    }
+    .checkmark svg {
+      width: 50px;
+      height: 50px;
+      stroke: whmake the colors and the blues and light blues and white on brand and consistent with the main website company brand and website. The thank you page should be blue light blue and white etc. see attached screenshot for the vibe I want. [IMG: IMG 5347]e;
+      stroke-width: 3.5;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 50;
+      stroke-dashoffset: 50;
+      animation: drawCheck 0.5s ease-out 0.3s forwards;
+    }
+    @keyframes scaleIn { from { transform: scale(0); } to { transform: scale(1); } }
+    @keyframes drawCheck { to { stroke-dashoffset: 0; } }
+
+    /* ===== TYPOGRAPHY ===== */
+    .brand-headline {
+      color: #ffffff;
+      letter-spacing: -0.02em;
+    }
+    .brand-accent { color: #e11d2a; }
+
+    .brand-divider {
+      height: 3px;
+      width: 60px;
+      background: linear-gradient(90deg, #e11d2a, transparent);
+      margin: 0 auto;
+    }
+
+    /* ===== INFO HIGHLIGHT BOX ===== */
+    .info-box {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(225, 29, 42, 0.3);
+      border-left: 4px solid #e11d2a;
+    }
+
+    /* ===== CTA BUTTONS ===== */
+    .btn-primary {
+      background: linear-gradient(135deg, #e11d2a 0%, #b8141f 100%);
+      color: whmake the colors and the blues and light blues and white on brand and consistent with the main website company brand and website. The thank you page should be blue light blue and white etc. see attached screenshot for the vibe I want. [IMG: IMG 5347]e;
+      box-shadow: 0 8px 24px rgba(225, 29, 42, 0.35);
+      transmake the colors and the blues and light blues and white on brand and consistent with the main website company brand and website. The thank you page should be blue light blue and white etc. see attached screenshot for the vibe I want. [IMG: IMG 5347]ion: all 0.25s ease;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(225, 29, 42, 0.5);
+    }
+    .btn-secondary {
+      background: transparent;
+      color: #ffffff;
+      border: 1.5px solid rgba(255, 255, 255, 0.25);
+      transmake the colors and the blues and light blues and white on brand and consistent with the main website company brand and website. The thank you page should be blue light blue and white etc. see attached screenshot for the vibe I want. [IMG: IMG 5347]ion: all 0.25s ease;
+    }
+    .btn-secondary:hover {
+      border-color: #e11d2a;
+      color: #e11d2a;
+    }
+
+    /* ===== LOGO BADGE ===== */
+    .logo-badge {
+      display: inline-flex;
+      align-make the colors and the blues and light blues and white on brand and consistent with the main website company brand and website. The thank you page should be blue light blue and white etc. see attached screenshot for the vibe I want. [IMG: IMG 5347]ems: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(225, 29, 42, 0.1);
+      border: 1px solid rgba(225, 29, 42, 0.4);
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #e11d2a;
+    }
+    .logo-dot {
+      width: 6px;
+      height: 6px;
+      background: #e11d2a;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #e11d2a;
+    }
